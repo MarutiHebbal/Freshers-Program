@@ -1,0 +1,49 @@
+
+
+
+  <div >
+  
+    <div class="calcbody">
+    
+     
+      <div class="thinborder" >
+      
+       
+        <p class="output" name="output" >
+          {{output}}<br>
+         
+        </p>
+        
+      </div>
+    
+      <div class="calcbuttons">
+        
+      
+        
+        <button name="btn1" class="numberbutton" value="1" (click)='updateOutput(1)'>1</button>
+        <button name="btn2" class="numberbutton" value="2" (click)='updateOutput(2)'>2</button>
+        <button name="btn3" class="numberbutton" value="3" (click)='updateOutput(3)'>3</button>
+        <button name="btnMinus" class="operationbutton" (click)='subtract()'> - </button>
+        <br>
+        <button name="btn4" class="numberbutton" value="4" (click)='updateOutput(4)'>4</button>
+        <button name="btn5" class="numberbutton" value="5" (click)='updateOutput(5)'>5</button>
+        <button name="btn6" class="numberbutton" value="6" (click)='updateOutput(6)'>6</button>
+        <button name="btnPlus" class="operationbutton" (click)='add()'>+</button>
+        <br>
+        <button name="btn7" class="numberbutton" value="7" (click)='updateOutput(7)'>7</button>
+        <button name="btn8" class="numberbutton" value="8" (click)='updateOutput(8)'>8</button>
+        <button name="btn9" class="numberbutton" value="9" (click)='updateOutput(9)'>9</button>
+        <button name="btnEquals" class="operationbutton" (click)='calculate()'>=</button>
+        <br>
+        <button name="btn0" class="numberbutton" value="0" (click)='updateOutput(0)'>0</button>
+        <button name="btnMulti" class="operationbutton" (click)='MUL()'>*</button>
+        <button name="btn" class="operationbutton" (click)='DIV()'>/</button>
+        <button name="btnClear" class="clearbutton" (click)='clear()'>CLR</button>
+        
+      </div>
+    
+    </div>
+   
+    
+  </div>
+  
