@@ -1,0 +1,21 @@
+<!-- Name<input type="text">
+Password<input type="text">
+
+<input type="button" value="send">
+<input type="button" value="Recive">
+<div>
+    <mat-spinner></mat-spinner>
+</div> -->
+
+First Name:<input type="text"[(ngModel)]="Name">
+Last Name:
+<input type="text"><br/>
+<button (click)="Add()">Add</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button (click)="Read()">Read</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button (click)="Del()">Delet</button>
+
+
+<h2> Employee List</h2>
+  <ul *ngFor="let employee of employee">
+    <li>{{employee.id}}</li>
+    </ul>

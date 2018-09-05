@@ -15,13 +15,16 @@ h3{
     font-style: normal;
     font-weight: bold;
     
-    background-color: SlateBlue; 
+    background-color: rgb(152, 192, 199); 
     border-collapse: collapse; 
     border: 2px solid navy
   }
   table.inner{
     border: 0px
   }
-  .submit{
-    margin-left: 45%;
+  .next{
+    margin-left: 50%;
+  }
+  .next1{
+    margin-left: 300%;
   }

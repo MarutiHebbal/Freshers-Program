@@ -10,11 +10,19 @@ import { EducationComponent } from '../education/education.component';
 })
 export class DetailsComponent implements OnInit {
     public onclick:boolean=true;
-    form: FormFields = new FormFields() ;
-    form1: FormFields1 = new FormFields1();
+   public  form: FormFields = new FormFields() ;
+    public form1: FormFields1 = new FormFields1();
+   
   constructor() { }
 
-
+  changedValue(item){
+    this.form.itemList=item;
+    console.log(item);
+     }    
+     fun(){
+      this.form.option=!this.form.option;
+     }       
+     
 
 
   ngOnInit() {
@@ -25,16 +33,22 @@ export class DetailsComponent implements OnInit {
 }
 
 
-class FormFields {
+ class FormFields {
   first_name: string;
   first_lname: string;
   country:string;
   City:string;
   Pin:number;
+  itemList:string;
   Address:string;
   State:string;
+  option:boolean=true;
+  radio1:string;
+  radio2:string;
+  radio3:string;
+ 
 }
-class FormFields1 {
+ class FormFields1 {
   t1:string;
   t2:string;
   t3:string;
